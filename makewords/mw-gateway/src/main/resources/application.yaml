@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 10086
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10001/eureka
+zuul:
+  prefix: /api
+  # 此处需要手动配置路由
+  routes:
+    word-service: /word/**
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500000
+ribbon:
+  ConnectTimeout: 100000
+  ReadTimeout: 350000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 0

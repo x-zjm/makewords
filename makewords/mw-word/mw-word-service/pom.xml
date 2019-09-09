@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mw-word</artifactId>
+        <groupId>com.zjm.makewords.service</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zjm.makewords.service</groupId>
+    <artifactId>mw-word-service</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zjm.makewords.service</groupId>
+            <artifactId>mw-word-interface</artifactId>
+            <version>${makewords.latest.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zjm.makewords.common</groupId>
+            <artifactId>mw-common</artifactId>
+            <version>${makewords.latest.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.thihy</groupId>
+            <artifactId>elasticsearch-analysis-paoding</artifactId>
+            <version>1.4.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+    </dependencies>
+
+</project>

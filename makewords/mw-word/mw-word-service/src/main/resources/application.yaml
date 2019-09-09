@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: word-service
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10001/eureka
+words:
+  defaultLength: 4
+  minWordLength: 2
+  maxWordLength: 10
+  textRule: /^[\u4E00-\u9FA5]+$/
+  wordFilePath: /static/500ChineseCharacter.txt
+  analysisPropertiesPath: classpath:paoding/paoding-analysis.properties
