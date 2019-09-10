@@ -7,4 +7,4 @@
 ## makewords-portal
 为此项目的客户端门户系统，使用vue + vuetify + vue-cli + vue-router + axios，安装包工具NPM，打包工具webpack。具体使用参考makewords-portal目录下的readme.md文件
 
-备注：接口文档参考makewords下的接口说明markdown文件。
+备注：根目录下为nginx的配置文件，直接覆盖使用即可，接口文档参考makewords-portal目录下的接口说明markdown文件。
